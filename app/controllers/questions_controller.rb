@@ -4,6 +4,7 @@ class QuestionsController < ApplicationController
     end
 
     def answer
+      raise
       if params[:question] == "I am going to work"
         @answer = "Great"
       elsif params[:question].split("").last == "?"
